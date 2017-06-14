@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>zone</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	.box{
+		width: 480px;
+		height: 320px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.box li{
+		width: 150px;
+		height: 100px;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+	.box li img{
+		width: 100%;
+		height: 100%;
+	}
+	.mask{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+		display: none;
+	}
+	.mask img{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.mask div{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		cursor: pointer; 
+	}
+	.mask .btnL{
+		background: url(img/left.png) center;
+		background-size: cover;
+		left: 10%;
+	}
+	.mask .btnR{
+		background: url(img/right.png) center;
+		background-size: cover;
+		right: 10%;
+	}
+	.close{
+		width: 50px;
+		height: 50px;
+		background: url(img/close.png);
+		background-size: cover;
+		position: absolute;
+		top: 20px;
+		right: 50px; 
+	}
+</style>
+<body>
+
+	<ul class="box">
+		<!-- li*8>img[src=img/$.jpg] -->
+		<li><img src="img/1.jpg" alt=""></li>
+		<li><img src="img/2.jpg" alt=""></li>
+		<li><img src="img/3.jpg" alt=""></li>
+		<li><img src="img/4.jpg" alt=""></li>
+		<li><img src="img/5.jpg" alt=""></li>
+		<li><img src="img/6.jpg" alt=""></li>
+		<li><img src="img/7.jpg" alt=""></li>
+		<li><img src="img/8.jpg" alt=""></li>
+		<li><img src="img/9.jpg" alt=""></li>
+	</ul>
+	<div class="mask">
+		<div class="btnL"></div>
+		<div class="btnR"></div>
+		<button class="close"></button>
+		<img src="" alt="">
+	</div>
+	
+</body>
+</html>
+<script src="jquery.min.js"></script>
+<script src="04 zone.js"></script>
